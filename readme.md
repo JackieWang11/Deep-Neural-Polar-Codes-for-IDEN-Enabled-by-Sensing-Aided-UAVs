@@ -6,15 +6,15 @@ In unmanned aerial vehicle (UAV)-based scenarios, sensing-aided integrated data 
 
 ### System Model
 
-<img src="D:\WorkSpace\Paper\ISAC\Deep Neural Polar Codes for Integrated Data and Energy Communication Networks Enabled by Sensing-Aided UAVs\Doc\img\scenario_01.png" style="zoom:30%;" />
+<img src=".\img\scenario_01.png" style="zoom:30%;" />
 
-<img src="D:\WorkSpace\Paper\ISAC\Deep Neural Polar Codes for Integrated Data and Energy Communication Networks Enabled by Sensing-Aided UAVs\Doc\img\frame_01.png" style="zoom: 25%;" />
+<img src=".\img\frame_01.png" style="zoom: 25%;" />
 
 We consider a scenario under a sensing-assisted integrated data and energy network (IDEN) system, where a mobile unmanned aerial vehicle (UAV) charges and communicates with fixed ground devices. A complete sensing and simultaneous wireless information and power transfer (SWIPT) process is divided into $T$ time slots, where the first time slot is dedicated to sensing, and the subsequent $T-1$ time slots are used for SWIPT.
 
 ### System Architecture
 
-<img src="D:\WorkSpace\Paper\ISAC\Deep Neural Polar Codes for Integrated Data and Energy Communication Networks Enabled by Sensing-Aided UAVs\Doc\img\sysmodel_01.png" style="zoom:20%;" />
+<img src=".\img\sysmodel_01.png" style="zoom:20%;" />
 
 The system consists of three components: a sensing module, a transmitter, and a receiver. The sensing module acquires the target's location information and channel state information (CSI); the transmitter utilizes the sensing information to guide the construction of polar codes; and the receiver splits the received signal into two branches via a power splitter for simultaneous energy harvesting (EH) and decoding.
 
@@ -26,19 +26,19 @@ Simulations compare the conventional algorithm and the proposed algorithm under 
 
 ### Files
 
-CompsingleEnergy: Traditional control group of individual coding.
+**CompsingleEnergy**: Traditional control group of individual coding.
 	-ParamOfSingle: Corresponding CSI.
 
-WithEnSingleBNN: Individual coding scheme based on BNN.
+**WithEnSingleBNN**: Individual coding scheme based on BNN.
 	-ParamOfSingleBNN: Corresponding CSI.
 
-WithEnergy: Joint coding scheme.
+**WithEnergy**: Joint coding scheme.
 	-main_with_energy: Joint coding scheme based on NN.
 	-comp_energy: Traditional control group of joint coding.
 
-sensing: Sensing related procedures and parameters.
+**sensing**: Sensing related procedures and parameters.
 
-Sys_params.pickle: Model parameters of EH.
+**Sys_params.pickle**: Model parameters of EH.
 
 ### Others
 
